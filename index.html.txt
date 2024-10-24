@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophysics Research - George Mason University</title>
+    <style>
+        :root {
+            --primary-color: #006633;
+            --secondary-color: #FFCC33;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: start;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astrophysics Research</h1>
+        <p>George Mason University</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="profile-section">
+            <img src="/api/placeholder/200/200" alt="Profile Photo" class="profile-image">
+            <div>
+                <h2>About Me</h2>
+                <p>I am a researcher in the Department of Physics and Astronomy at George Mason University, working under the supervision of Dr. Ferah Munshi. My research focuses on cosmological simulations and dark matter in dwarf galaxies.</p>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Current Research Projects</h2>
+            
+            <div class="project">
+                <h3>3D Shape Analysis of Dwarf Galaxies</h3>
+                <p>Investigating the relationship between stellar and dark matter distributions in dwarf galaxy simulations. Our research demonstrates that the 3D shape of stellar distributions closely traces the underlying dark matter structure, particularly in galaxies lacking a stellar disk.</p>
+            </div>
+
+            <div class="project">
+                <h3>Comparative Analysis of Dark Matter Models</h3>
+                <p>Examining the differences in 3D shapes of dark matter and stellar distributions under two distinct dark matter models:</p>
+                <ul>
+                    <li>Cold Dark Matter (CDM)</li>
+                    <li>Self-Interacting Dark Matter (SIDM) with velocity-dependent cross sections</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>[Your publications will be listed here]</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Department of Physics and Astronomy<br>
+            George Mason University<br>
+            [Your Email]<br>
+            [Office Location]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - George Mason University</p>
+    </footer>
+</body>
+</html>
